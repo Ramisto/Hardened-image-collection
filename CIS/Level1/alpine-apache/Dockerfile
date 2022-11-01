@@ -15,3 +15,7 @@ RUN apk add apache2 \
     && rc-service apache2 start \
     && rc-update add apache2
 
+# 2.1 Ensure Only Necessary Authentication and Authorization Modules Are Enabled (Not Scored)
+# Not applicable here
+
+
