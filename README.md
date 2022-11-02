@@ -1,3 +1,4 @@
 # Hardened-image-collection
 
-docker build -t my-dockerfile .
+Exemple : 
+docker build -t CIS/alpine-apache/Dockerfile .
