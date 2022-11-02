@@ -1,4 +1,4 @@
 # Hardened-image-collection
 
 Exemple : 
-docker build -t CIS/alpine-apache/Dockerfile .
+docker build -t CIS/Level1/alpine-apache/Dockerfile .
