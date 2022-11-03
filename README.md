@@ -10,5 +10,6 @@ The Center for Internet Security (CIS) is anonprofit organization, formed in Oct
 
 ## Use
 
-Exemple : 
+``` 
 docker build -t CIS/Level1/alpine-apache/Dockerfile .
+```
