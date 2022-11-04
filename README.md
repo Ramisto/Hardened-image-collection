@@ -22,7 +22,7 @@ the	following	characteristics:
   - acts	as	defense	in	depth	measure
   - may	negatively	inhibit	the	utility	or	performance	of	the	technology.
 
-## Use
+## Usage
 
 ``` 
 docker build -t CIS/Level1/alpine-apache/Dockerfile .
