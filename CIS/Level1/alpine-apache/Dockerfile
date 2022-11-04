@@ -35,28 +35,28 @@ RUN $APACHE_PREFIX/bin/apachectl -k start
 # No automatic
 
 # 2.2 Ensure the Log Config Module Is Enabled (Scored)
-# Apply
+# check
 
 # 2.3 Ensure the WebDAV Modules Are Disabled (Scored)
-# Apply
+# check
 
 # 2.4 Ensure the Status Module Is Disabled (Scored)
-# Apply
+# check
 
 # 2.5 Ensure the Autoindex Module Is Disabled (Scored)
-# Apply
+# check
 
 # 2.6 Ensure the Proxy Modules Are Disabled (Scored)
-# Apply
+# check
 
 # 2.7 Ensure the User Directories Module Is Disabled (Scored)
-# Apply
+# check
 
 # 2.8 Ensure the Info Module Is Disabled (Scored)
-# Apply
+# check
 
 # 2.9 Ensure the Basic and Digest Authentication Modules are Disabled (Scored)
-# Apply
+# check
 
 # 3.1 Ensure the Apache Web Server Runs As a Non-Root User (Scored)
 RUN groupadd -r apache
@@ -99,4 +99,9 @@ RUN  find -L $DOCROOT -group $GRP -perm /g=w -print | xargs chmod g-w
 
 # 3.13 Ensure Access to Special Purpose Application Writable Directories is Properly Restricted (Not Scored)
 # No automatic
+
+# 4.1 Ensure Access to OS Root Directory Is Denied By Default (Scored)
+# check
+
+
 
