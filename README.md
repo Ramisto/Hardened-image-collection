@@ -1,5 +1,7 @@
 # Hardened-image-collection
 
+![](https://geps.dev/progress/20)
+
 ##### Security from the design of an application is essential, and saves everyone time.
 
 ##### This collection of images will allow you to easily deploy security recommendations.
