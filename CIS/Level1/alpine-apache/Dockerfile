@@ -77,3 +77,26 @@ RUN chgrp -R root $APACHE_PREFIX
 
 # 3.6 Ensure Other Write Access on Apache Directories and Files Is Restricted (Scored)
 RUN chmod -R o-w $APACHE_PREFIX
+
+# 3.7 Ensure the Core Dump Directory Is Secured (Scored)
+RUN chown root:apache /var/log/httpd
+RUN chmod o-rwx /var/log/httpd
+
+# 3.8 Ensure the Lock File Is Secured (Scored)
+# No automatic
+
+# 3.9 Ensure the Pid File Is Secured (Scored)
+# No automatic
+
+# 3.10 Ensure the ScoreBoard File Is Secured (Scored)
+# No automatic
+
+# 3.11 Ensure Group Write Access for the Apache Directories and Files Is Properly Restricted (Scored)
+RUN chmod -R g-w $APACHE_PREFIX
+
+# 3.12 Ensure Group Write Access for the Document Root Directories and Files Is Properly Restricted (Scored)
+RUN  find -L $DOCROOT -group $GRP -perm /g=w -print | xargs chmod g-w
+
+# 3.13 Ensure Access to Special Purpose Application Writable Directories is Properly Restricted (Not Scored)
+# No automatic
+
